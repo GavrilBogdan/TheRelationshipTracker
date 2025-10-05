@@ -1,0 +1,30 @@
+html, body {
+  overflow-x: hidden;
+}
+
+.white-shadow {
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.5);
+  }
+.bounce-animation {
+  animation : bounce 2s infinite;
+  transition: ease-in-out;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}

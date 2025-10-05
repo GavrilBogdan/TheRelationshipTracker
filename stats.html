@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics | The Relationship Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e594cd51e4.js" crossorigin="anonymous"></script>
+</head>
+<body class="w-full h-screen bg-gradient-to-r from-[#FFF7AD] to-[#FFA9F9] overflow-x-hidden">
+    <a href="index.html"
+        class="absolute font-bold top-4 sm:top-4 left-4 px-4 py-2 rounded-lg border border-black text-black transition-colors duration-200 hover:bg-pink-200 hover:text-black">
+      ← Go Back 
+
+    </a> 
+
+    <div class="min-h-screen flex justify-center text-center items-center">
+        <div class="flex flex-row bg-black/60 justify-between rounded-2xl p-6 px-12 gap-5 relative z-20">
+            <div>
+                <input type="text" class=" w-48 bg-transparent border-b-2 border-pink-500 focus:outline-none focus:border-blue-500 text-white font-bold text-3xl" id="dinamicInput" placeholder="Your Name">
+                <div class="flex flex-start flex-col text-left gap-6">
+                    <div class="bar z-20" data-key="love">
+                <h3 class="font-bold text-white text-xl" >❤️ LOVE</h3>
+                <div class="w-[300px] h-[30px] border-2 border-gray-700 relative mb-4 rounded-3xl">
+                     <div class="progress rounded-3xl" style="background: linear-gradient(to right, #FF7C90, #FFE1A4); height: 100%; width: 0%;"></div>
+                         <div class="flex gap-2">
+                      <p class="percent text-2xl font-bold text-white">0%</p>
+                      <button class="plus h-[2rem]  w-[2rem] bg-green-400 rounded-full">+</button>
+                      <button class="minus h-[2rem] w-[2rem] bg-red-600 rounded-full">-</button>
+                 </div>
+                    </div>
+                   
+                </div>
+                <div class="bar z-20" data-key="happiness">
+                <h3 class="font-bold text-white text-xl">😁 HAPINESS</h3>
+                <div class="w-[300px] h-[30px] border-2 border-gray-700 relative mb-4 rounded-3xl">
+                <div class="progress rounded-3xl" style="background: linear-gradient(to right, #87ff7c, #ffca61); height: 100%; width: 0%;"></div>
+                 <div class="flex gap-2">
+                      <p class="percent text-2xl font-bold text-white">0%</p>
+                      <button class="plus h-[2rem]  w-[2rem] bg-green-400 rounded-full">+</button>
+                      <button class="minus h-[2rem] w-[2rem] bg-red-600 rounded-full">-</button>
+                 </div>
+                </div>
+                
+                </div>
+                <div class="bar z-20" data-key="sadness">
+                <h3 class="font-bold text-white text-xl">😭 SADNESS</h3>
+                <div class="w-[300px] h-[30px] border-2 border-gray-700 relative mb-4 rounded-3xl">
+                <div class="progress rounded-3xl" style="background: linear-gradient(to right, #507fff, #ffffff); height: 100%; width: 0%;"></div>
+                 <div class="flex gap-2">
+                      <p class="percent text-2xl font-bold text-white">0%</p>
+                      <button class="plus h-[2rem]  w-[2rem] bg-green-400 rounded-full">+</button>
+                      <button class="minus h-[2rem] w-[2rem] bg-red-600 rounded-full">-</button>
+                 </div>
+                </div>
+              
+                </div>
+                <div class="bar z-20" data-key="stress">
+                <h3 class="font-bold text-white text-xl">😬 STRESS</h3>
+                <div class="w-[300px] h-[30px] border-2 border-gray-700 relative mb-4 rounded-3xl">
+                <div class="progress rounded-3xl" style="background: linear-gradient(to right, #141414, #ff8cc9); height: 100%; width: 0%;"></div>
+                <div class="flex gap-2">
+                      <p class="percent text-2xl font-bold text-white">0%</p>
+                      <button class="plus h-[2rem]  w-[2rem] bg-green-400 rounded-full">+</button>
+                      <button class="minus h-[2rem] w-[2rem] bg-red-600 rounded-full">-</button>
+                 </div>
+                </div>
+                
+                </div>
+                <div class="bar z-20" data-key="anger">
+                <h3 class="font-bold text-white text-xl">😡 ANGER</h3>
+                <div class="w-[300px] h-[30px] border-2 border-gray-700 relative mb-4 rounded-3xl">
+                <div class="progress rounded-3xl" style="background: linear-gradient(to right, #ff4e50, #f9d423); height: 100%; width: 0%;"></div>
+                 <div class="flex gap-2">
+                      <p class="percent text-2xl font-bold text-white">0%</p>
+                      <button class="plus h-[2rem]  w-[2rem] bg-green-400 rounded-full">+</button>
+                      <button class="minus h-[2rem] w-[2rem] bg-red-600 rounded-full">-</button>
+                 </div>
+                </div>
+
+                </div>
+            </div>
+            </div>
+            <div class="flex justify-center items-center align-middle"><img src="images/bogdan Small.jpeg" class="rounded-xl shadow-[0_0_16px_5px_rgba(255,255,255,0.8)]" alt=""></div>
+                    <img src="images/pink_heart.png" class="absolute w-64 -right-20 -bottom-20" alt="">
+                    <img src="images/cupidon.png" alt="" class="absolute w-48 -right-20 -top-20 rotate-[-20deg]">
+                    <img src="images/red_heart.png" alt="" class="absolute w-64 opacity-40 top-40 left-20 z-10">
+        </div>
+
+    </div>
+
+
+
+<script>
+     const input = document.getElementById('dinamicInput');
+
+     input.value = localStorage.getItem("username") || "";
+
+     input.addEventListener('input', () => {
+        input.style.width = ((input.value.length + 1) * 15) + "px";
+         localStorage.setItem("username", input.value);
+     })
+
+     document.querySelectorAll('.bar').forEach(bar => {
+
+        const progress = bar.querySelector('.progress');
+        const percent = bar.querySelector('.percent');
+        const plus = bar.querySelector('.plus');
+        const minus = bar.querySelector('.minus');
+
+        const key = bar.getAttribute('data-key');
+
+        let value = parseInt(localStorage.getItem(key)) || 0;
+
+        function updateBar() {
+            progress.style.width = value + "%";
+            percent.textContent = value + "%";
+            localStorage.setItem(key, value);
+        }
+
+        plus.addEventListener('click', () => {
+            if (value < 100) {
+                value++;
+                updateBar();
+            }
+        })
+
+        minus.addEventListener('click', () => {
+            if ( value > 0 ) {
+                value--;
+                updateBar();
+            }
+        })
+        updateBar();
+     })
+     
+</script>
+</body>
+</html>
